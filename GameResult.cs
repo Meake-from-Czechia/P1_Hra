@@ -2,6 +2,7 @@
 {
     public enum GameResult
     {
-        Win, Lose
+        Win = 0,
+        Lose = 1
     }
 }

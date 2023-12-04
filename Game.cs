@@ -7,7 +7,7 @@
         public List<Player> Players;
         public List<Enemy> Enemies;
         #region Helper views
-        private bool ArePlayersAlive { get { return alivePlayers.Count > 0; } }
+        private bool ArePlayersAlive => alivePlayers.Count > 0;
         private bool AreEnemiesAlive { get { return aliveEnemies.Count > 0; } }
         private List<Player> alivePlayers { get { return Players.Where(x => x.IsAlive).ToList(); } }
         private List<Enemy> aliveEnemies { get { return Enemies.Where(x => x.IsAlive).ToList(); } }
